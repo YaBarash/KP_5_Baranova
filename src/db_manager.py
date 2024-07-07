@@ -43,8 +43,7 @@ class DBManager:
         """)
 
     def get_avg_salary(self):
-        '''получает среднюю зарплату по каждой  вакансии каждой компании
-        если в 1 компании одинаковые названия вакансий'''
+        '''получает среднюю зарплату по вакансии'''
         return self.__execute_query("""
         SELECT employer, name, round(avg(salary_from),2) AS salary_avg 
         FROM vacancies 
