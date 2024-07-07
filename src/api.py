@@ -73,8 +73,3 @@ class HHApi:
                     "area": vac["area"]["name"]
                 })
         return all_vacancies
-
-
-if __name__ == "__main__":
-    hh = HHApi().get_all_vacancies()
-    print(json.dumps(hh, ensure_ascii=False, indent=4))
