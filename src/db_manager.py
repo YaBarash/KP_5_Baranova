@@ -75,5 +75,4 @@ class DBManager:
                 new_list_vacancies.append(vac)
         return new_list_vacancies
 
-db = DBManager('kp_baranova')
-print(db.get_vacancies_with_keyword('Ревизор Кр'))
+
