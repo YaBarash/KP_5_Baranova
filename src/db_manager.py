@@ -1,6 +1,5 @@
 import psycopg2
 import os
-from utils.utils import insert_data_to_table
 
 
 class DBManager:
