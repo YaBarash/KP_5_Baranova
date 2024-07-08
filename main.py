@@ -43,4 +43,3 @@ while True:
             break
     else:
         print("Такой цифры нет, попробуй еще раз")
-
