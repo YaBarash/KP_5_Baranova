@@ -1,10 +1,21 @@
 import requests
+from abc import ABC, abstractmethod
 
 
-class HHApi:
+class BaseApi(ABC):
     '''
-    Класс для работы с ххру для получения вакансий по работодателю
+    Абстрактный класс для работы с АПИ сервиса с вакансиями
     '''
+    @abstractmethod
+    def __get_requests(self):
+        pass
+
+
+class HHApi(BaseApi):
+    '''
+    Класс-наследник для работы с ххру для получения вакансий по работодателю
+    '''
+
     def __get_request(self):
         """
         Получение вакансий с ххру
