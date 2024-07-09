@@ -10,6 +10,10 @@ class BaseApi(ABC):
     def __get_requests(self):
         pass
 
+    @abstractmethod
+    def __get_vacancies_employer(self, id):
+        pass
+
 
 class HHApi(BaseApi):
     '''
