@@ -1,10 +1,11 @@
 import requests
 
 
-class HHApi:
+class HHApi():
     '''
     Класс для работы с ххру для получения вакансий по работодателю
     '''
+
     def __get_request(self):
         """
         Получение вакансий с ххру
