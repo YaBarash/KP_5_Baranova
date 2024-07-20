@@ -2,7 +2,6 @@ from utils.utils import (create_database,
                          create_tables,
                          insert_data_to_table)
 from src.db_manager import DBManager
-import json
 from tabulate import tabulate
 
 db_name = "kp_baranova"
